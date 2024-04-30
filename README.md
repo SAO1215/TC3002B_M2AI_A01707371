@@ -82,18 +82,31 @@ Entrenamos el modelo, en 20 epocas, utilizando los datos de entrenamiento y vali
 
 ### Evaluación del Modelo y Resultados
 
-Después del Reafinamiento, el modelo alcanzó una precisión de prueba del 89%.
+EL modelo inicial alcanzaba una taza de aciertos del 79%, después del reafinamiento, el modelo alcanzó una taza de aciertos en prueba del 89%. En las graficas se puede visualizar el comportamiento del modelo respecto a los valores de accuracy y loss durante el entrenamiento. 
 
-#### Anexos
+### Initial Model vs Final Model 
 
-[Articulo 1](https://www.sciencedirect.com/science/article/pii/S1877050918309335)
+#### Acuraccy
+![initialAcc](images/initial_model_acc.png)
+![finalAcc](images/final_model_acc.png)
 
-[Articulo 2](https://ieeexplore.ieee.org/document/9422058)
+#### Loss
+![initialLoss](images/initial_model_loss.png)
+![finalLoss](images/final_model_loss.png)
 
-[Articulo 3](https://www.sciencedirect.com/science/article/pii/S157495412300482X)
+#### Confusion Matrix
+![initialCM](images/initial_model_cm_evaluate.png)
+![finalCM](images/final_model_cm_evaluate.png)
 
-[Articulo 4](https://www.sciencedirect.com/science/article/pii/S1877050921023565)
 
-[Articulo 5](https://pdf.sciencedirectassets.com/776627/1-s2.0-S2666285X21X00039/1-s2.0-S2666285X21000960/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE8aCXVzLWVhc3QtMSJHMEUCIDKiMH6gCKQW%2BQOPApbU%2BmitC%2FdunX8%2BV7Da3ids%2BLsqAiEAxtsB9CTg8%2B%2FVkiFLzbMTGOWyMMzUDHbdSGtTCBxx3M8quwUIl%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDMJyc42jQJ5eHJTKiSqPBUOXirtzeFNYmVbMr9i8XyS%2FwuqsZ3aC75naAhEFLKNR927oXT9J2d55puGvts%2Bc%2BoJGULloHVyFWQ3QjHNwSErzqF%2BTAh5iWFPlgSZzxfL9c9Zmd0Q3JukzD9fOzlAuLdI3XheX09tSxzJ%2B1z4TLXdgfVa%2BM%2BXeqeqTNpbO3MAmTpSSXVvGFJvW%2Faw%2BfuAFJMzI%2BV4uGP21q7aiyuxK6PLRSmfeG0yxozqTP3wQCtpBQ9Yf1khzg7vCL%2F4mPEoA%2FYY8ODBLuf3du5pr5y9FlmIETOzYxscSBFLNcjxH7EI%2FbcD4q0XQidavtcDXLeejUtv9B27QS5jIIheADKs8lRF2Gv8Di%2FPDRoRFV%2BAVEONxWliyb8hxzRlGbBBZXLLw0XH3ZvpGXfZulIeJT1U642B5KJW2sO%2BUhCGqZwsEUqEG33UGqQW147VAS9R7uMisl8mw0e9EWwJN2xVZHvtLXmeiHZ%2FrFKnfDo70pDZ3ZwuDQIxZgcPHW7XZUQo0jjF03NCNFgvhju6JoLcXjQ8BtZlWpv5%2Bid%2FsY41MZMafsX1M%2Fdk8%2BUx%2B%2BlxRt2ncdyw6G8pgEMcPS6JFZC2OV6RzIXIcDXbkMjmFUCc%2FoGeQFRvZZMwFGzFxXegRBoKLPWa0MFldHrvYPuNxXE4CIhPM6hszX2XMSR9Ro6NjfQxgfrJhIxYAICMwerylnPBdmHlURjHOuY0VJcSk%2Bphjot99fEj1JFu4gZGNSDkilfXqpWdtegxulxKnpinFcQz2eSs0MBAaiDH6YncsETj2g9ReeB07I2%2F2c%2Fep%2BQgU1qpujeyzDGgmDbBA6%2BzoPdnhNXkbgji%2BVYTKGAfUVvOlWTnBwYYWOewy7RsS2Qrf0uiiJHcwnoemsQY6sQF39CczUgfPNjQPFpNtxHoHHXiElLvtbmFPDy05NYpAa2kLGOGR4vhtWDNT1MEDTtD%2FFHQnqIpDNzQXv7KxN8ego6NjrM%2BN5i4LMXQnkT5VHak%2Fv5StI%2BH8D6e4lSUiLlFrkOJgX1CsnlcNkTYEa6Rptlwer2cEjTTH9I43KdX%2F3yrxqtCWSRZhLsG2qid1C%2FDeh0JiDWOGSKnQ4a7l%2BkFaCuevBy%2FdUz2068CsOBGAqiM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240424T225602Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYRAJPI23H%2F20240424%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ddfcdcd90c939495dce6893841a8019c2b13275dcb3e788732112cf7325757d0&hash=ffd772c756a07f5e9e9b3d2ea08fe26c17ee18a6262ea83ad36108bb0f52fffb&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S2666285X21000960&tid=spdf-127f923c-5f0e-4344-ace3-3b732f21ffdd&sid=86bb57805f8b8743914af9797d691c61c505gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0b1c57585e5f0f095105&rr=8799af2d88702e5d&cc=mx)
+## Recursos Bibliográficos
 
-[Articulo 6](https://www.ijisae.org/index.php/IJISAE/article/view/2594/1176)
+* S. Nazir and M. Kaleem, “Object classification and visualization with edge artificial intelligence for a customized camera trap platform,” Ecological informatics, vol. 79, pp. 102453–102453, Mar. 2024, doi: https://doi.org/10.1016/j.ecoinf.2023.102453.
+
+* N. Sharma, V. Jain, and A. Mishra, “An Analysis Of Convolutional Neural Networks For Image Classification,” Procedia Computer Science, vol. 132, pp. 377–384, 2018, doi: https://doi.org/10.1016/j.procs.2018.05.198.
+‌
+* K. Dong, C. Zhou, Y. Ruan, and Y. Li, “MobileNetV2 Model for Image Classification,” 2020 2nd International Conference on Information Technology and Computer Application (ITCA), Dec. 2020, doi: https://doi.org/10.1109/itca52113.2020.00106.
+
+* R. Indraswari, R. Rokhana, and W. Herulambang, “Melanoma image classification based on MobileNetV2 network,” Procedia Computer Science, vol. 197, pp. 198–207, 2022, doi: https://doi.org/10.1016/j.procs.2021.12.132.
+
+* J. Praveen Gujjar, R. Prasanna Kumar H, and N. N. Chiplunkar, “Image Classification and Prediction using Transfer Learning in Colab Notebook,” Global Transitions Proceedings, Aug. 2021, doi: https://doi.org/10.1016/j.gltp.2021.08.068.
